@@ -40,7 +40,8 @@
       outline: 'none',
       padding: '0.8em 1.2em',
       position: 'fixed',
-      right: '2em'
+      right: '2em',
+      whiteSpace: 'nowrap'
     });
 
     banner.appendChild(button);
