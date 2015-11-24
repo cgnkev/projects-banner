@@ -29,7 +29,7 @@
     banner = doc.createElement('div');
 
     button = generateElement('button', {
-      innerHTML: '<img src="http://madewithlove.be/themes/madewithlove/assets/app/img/logo.svg" style="width:1.4em;vertical-align:middle"> madewithlove #friyay project',
+      innerHTML: '<img src="http://madewithlove.be/themes/madewithlove/assets/app/img/logo.svg" style="width:1.4em;vertical-align:middle;display:inline-block"> madewithlove #friyay project',
       onclick: triggerProjects
     }, {
       background: '#EEF0F1',
