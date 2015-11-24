@@ -1,8 +1,39 @@
 ;(function (win, doc) {
 
-  var projectsWrapper, iframe, projectsLoaded;
+  var projectsWrapper, iframe, projectsLoaded, resets;
 
   projectsLoaded = false;
+
+  resets = {
+    background: 'none',
+    border: 'none',
+    borderRadius: '0',
+    clear: 'none',
+    color: 'inherit',
+    cursor: 'auto',
+    display: 'inline',
+    filter: 'none',
+    font: 'inherit',
+    height: 'auto',
+    left: 'auto',
+    letterSpacing: 'normal',
+    lineHeight: '1',
+    listStyle: 'none',
+    margin: '0',
+    overflow: 'visible',
+    padding: '0',
+    position: 'static',
+    cssFloat: 'none',
+    textAlign: 'left',
+    textDecoration: 'none',
+    textIndent: '0',
+    textTransform: 'none',
+    top: 'auto',
+    verticalAlign: 'baseline',
+    visibility: 'visible',
+    width: 'auto',
+    zIndex: 'auto'
+  };
 
 
   
@@ -15,6 +46,9 @@
     var element = doc.createElement(nodeName);
     Object.keys(properties || {}).forEach(function (property) {
       element[property] = properties[property];
+    });
+    Object.keys(resets).forEach(function (property) {
+      element.style[property] = resets[property];
     });
     Object.keys(styles || {}).forEach(function (style) {
       element.style[style] = styles[style];
