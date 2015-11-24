@@ -34,13 +34,13 @@
     }, {
       background: '#EEF0F1',
       border: 'none',
+      bottom: '0',
       cursor: 'pointer',
       font: '1em Helvetica, sans-serif',
       outline: 'none',
       padding: '0.8em 1.2em',
-      position: 'absolute',
-      right: '2em',
-      top: '0'
+      position: 'fixed',
+      right: '2em'
     });
 
     banner.appendChild(button);
@@ -70,13 +70,22 @@
 
     projectsWrapper = generateElement('div', null, {
       background: '#FFF',
+      bottom: '0',
       height: '70%',
       left: '0',
       position: 'fixed',
-      top: '0',
-      transform: 'translateY(-120%)',
+      transform: 'translateY(200%)',
       transition: 'transform 1.4s',
       width: '100%'
+    });
+
+    blur = generateElement('div', null, {
+      background: 'linear-gradient(to bottom, rgba(238, 240, 241, 0), rgba(238, 240, 241, 0.7))',
+      bottom: '100%',
+      height: '50%',
+      position: 'absolute',
+      left: '0',
+      right: '0'
     });
 
     iframe = generateElement('iframe', {
@@ -84,27 +93,33 @@
       src: 'http://projects-banner.madewithlove.be/'
     }, {
       border: 'none',
-      borderBottom: '2px solid #1C84B0',
+      borderTop: '2px solid #1C84B0',
       height: '100%',
       overflow: 'auto',
       width: '100%'
     });
 
     closeButton = generateElement('button', {
-      innerHTML: 'Close',
+      innerHTML: '&times;',
       onclick: hideProjects
     }, {
       background: '#1C84B0',
       border: 'none',
+      boxSizing: 'border-box',
+      bottom: '100%',
       color: '#FFF',
+      cursor: 'pointer',
       font: '18px/1 Helvetica,sans-serif',
+      height: '2em',
       outline: 'none',
       padding: '0.5em',
       position: 'absolute',
       right: '2em',
-      top: '100%'
+      textAlign: 'center',
+      width: '2em'
     });
 
+    projectsWrapper.appendChild(blur);
     projectsWrapper.appendChild(iframe);
     projectsWrapper.appendChild(closeButton);
 
@@ -118,7 +133,7 @@
 
 
   var hideProjects = function () {
-    projectsWrapper.style.transform = 'translateY(-120%)';
+    projectsWrapper.style.transform = 'translateY(200%)';
   }
 
 
