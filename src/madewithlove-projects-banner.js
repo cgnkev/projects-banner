@@ -108,6 +108,7 @@
       bottom: '0',
       height: '70%',
       left: '0',
+      maxHeight: '500px',
       position: 'fixed',
       transform: 'translateY(200%)',
       transition: 'transform 1.4s',
