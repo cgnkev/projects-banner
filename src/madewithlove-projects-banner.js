@@ -36,7 +36,7 @@
   };
 
 
-  
+
   var init = function () {
     generateHTML();
   };
@@ -63,14 +63,14 @@
     banner = doc.createElement('div');
 
     button = generateElement('button', {
-      innerHTML: '<img src="http://madewithlove.be/themes/madewithlove/assets/app/img/logo.svg" style="width:1.4em;vertical-align:middle;display:inline-block"> madewithlove #friyay project',
+      innerHTML: '<img src="http://madewithlove.be/themes/madewithlove/assets/app/img/logo.svg" style="width:1.4em;vertical-align:middle;display:inline-block"> this is madewithlove on friday',
       onclick: triggerProjects
     }, {
       background: '#EEF0F1',
       border: 'none',
       bottom: '0',
       cursor: 'pointer',
-      font: '1em Helvetica, sans-serif',
+      font: '0.9em Helvetica, sans-serif',
       outline: 'none',
       padding: '0.8em 1.2em',
       position: 'fixed',
@@ -132,7 +132,7 @@
       height: '100%',
       overflow: 'auto',
       width: '100%',
-      boxShadow: '1px -0px 23px rgba(0, 0, 0, 1)'
+      boxShadow: '1px -0px 23px rgba(0, 0, 0, 1)',
     });
 
     closeButton = generateElement('button', {
