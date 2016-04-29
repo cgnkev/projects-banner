@@ -32,7 +32,8 @@
     verticalAlign: 'baseline',
     visibility: 'visible',
     width: 'auto',
-    zIndex: 'auto'
+    zIndex: 'auto',
+    boxShadow: '1px -0px 23px rgba(0, 0, 0, 1)'
   };
 
 
@@ -139,7 +140,7 @@
       innerHTML: '&times;',
       onclick: hideProjects
     }, {
-      background: '#1C84B0',
+      background: '#CF1633',
       border: 'none',
       boxSizing: 'border-box',
       bottom: '100%',
