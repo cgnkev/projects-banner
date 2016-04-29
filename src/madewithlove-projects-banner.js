@@ -33,7 +33,6 @@
     visibility: 'visible',
     width: 'auto',
     zIndex: 'auto',
-    boxShadow: '1px -0px 23px rgba(0, 0, 0, 1)'
   };
 
 
@@ -130,10 +129,10 @@
       src: 'http://projects-banner.madewithlove.be/'
     }, {
       border: 'none',
-      borderTop: '2px solid #1C84B0',
       height: '100%',
       overflow: 'auto',
-      width: '100%'
+      width: '100%',
+      boxShadow: '1px -0px 23px rgba(0, 0, 0, 1)'
     });
 
     closeButton = generateElement('button', {
