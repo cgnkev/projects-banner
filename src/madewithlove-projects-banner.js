@@ -63,7 +63,7 @@
     banner = doc.createElement('div');
 
     button = generateElement('button', {
-      innerHTML: '<img src="http://madewithlove.be/themes/madewithlove/assets/app/img/logo.svg" style="width:1.4em;vertical-align:middle;display:inline-block"> this is madewithlove on friday',
+      innerHTML: '<img src="//madewithlove.be/themes/madewithlove/assets/app/img/logo.svg" style="width:1.4em;vertical-align:middle;display:inline-block"> this is madewithlove on friday',
       onclick: triggerProjects
     }, {
       background: '#EEF0F1',
@@ -126,7 +126,7 @@
 
     iframe = generateElement('iframe', {
       scrolling: 'auto',
-      src: 'http://projects-banner.madewithlove.be/'
+      src: '//projects-banner.madewithlove.be/'
     }, {
       border: 'none',
       height: '100%',
