@@ -126,7 +126,7 @@
 
     iframe = generateElement('iframe', {
       scrolling: 'auto',
-      src: '//projects-banner.madewithlove.be/'
+      src: '//madewithlove.github.io/projects-banner/'
     }, {
       border: 'none',
       height: '100%',
